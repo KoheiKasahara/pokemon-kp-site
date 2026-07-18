@@ -1,0 +1,89 @@
+:root {
+  color: #1e293b;
+  background: #f6f8fc;
+  font-family: "Yu Gothic UI", "Hiragino Sans", system-ui, sans-serif;
+  font-synthesis: none;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 320px; }
+a { color: inherit; text-decoration: none; }
+button, input { font: inherit; }
+
+.app-shell { min-height: 100vh; display: flex; flex-direction: column; }
+.site-header { min-height: 70px; padding: 0 5vw; display: flex; align-items: center; justify-content: space-between; background: #13293d; color: #fff; box-shadow: 0 2px 14px rgb(15 23 42 / 16%); }
+.brand { display: flex; align-items: center; gap: .7rem; font-weight: 800; letter-spacing: .03em; }
+.brand-mark { display: grid; place-items: center; width: 34px; height: 34px; border-radius: 10px; background: #e4a11b; color: #13293d; font-size: .86rem; }
+.site-header nav { display: flex; gap: 1.2rem; font-size: .92rem; }
+.site-header nav a { color: #bfdbf5; padding: .4rem 0; border-bottom: 2px solid transparent; }
+.site-header nav a.active { color: #fff; border-color: #e4a11b; }
+.content { width: min(1100px, 90vw); margin: 0 auto; padding: 4.5rem 0 5rem; flex: 1; }
+.site-footer { padding: 1.3rem 5vw; background: #13293d; color: #bfdbf5; text-align: center; font-size: .78rem; }
+.site-footer p { margin: 0; }
+
+.page-heading { margin-bottom: 2.2rem; }
+.eyebrow { margin: 0 0 .55rem; color: #d17b00; font-weight: 800; font-size: .74rem; letter-spacing: .16em; }
+h1, h2, h3, p { margin-top: 0; }
+h1 { margin-bottom: .7rem; font-size: clamp(2rem, 5vw, 3.25rem); letter-spacing: -.045em; }
+h2 { margin-bottom: .6rem; font-size: clamp(1.3rem, 3vw, 1.8rem); letter-spacing: -.03em; }
+.page-heading > p:last-child, .section-description { color: #64748b; line-height: 1.7; }
+.tournament-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1rem; }
+.tournament-card { display: block; padding: 1.4rem; border: 1px solid #dce4ef; border-radius: 18px; background: #fff; transition: transform .16s ease, box-shadow .16s ease; }
+.tournament-card:hover { transform: translateY(-3px); box-shadow: 0 12px 28px rgb(15 23 42 / 11%); }
+.game-tag, .entry-order { display: inline-block; padding: .26rem .5rem; border-radius: 999px; background: #e5f3e8; color: #27723a; font-size: .75rem; font-weight: 800; }
+.tournament-card h2 { margin: .8rem 0 1rem; }
+.tournament-card dl { display: grid; grid-template-columns: 1fr 1fr; margin: 0 0 1rem; gap: .4rem; }
+.tournament-card dl div { padding: .65rem; border-radius: 9px; background: #f4f7fb; }
+.tournament-card dt { color: #64748b; font-size: .72rem; }
+.tournament-card dd { margin: .2rem 0 0; font-weight: 700; }
+.tournament-card p { color: #475569; font-size: .9rem; }
+.card-link { color: #a55e00; font-weight: 800; font-size: .88rem; }
+
+.back-link { display: inline-block; margin-bottom: 1.25rem; color: #406b91; font-size: .9rem; font-weight: 700; }
+.detail-hero { padding: clamp(1.4rem, 4vw, 2.5rem); border-radius: 22px; background: linear-gradient(135deg, #13293d, #254e70); color: #fff; }
+.detail-hero .game-tag { background: #f7c96b; color: #563600; }
+.detail-hero h1 { margin: .85rem 0 .55rem; }
+.detail-hero > p { color: #d9e9f7; }
+.stat-cards { display: flex; flex-wrap: wrap; gap: .8rem; margin: 1.7rem 0 1rem; }
+.stat-cards div { min-width: 145px; padding: .75rem 1rem; border: 1px solid rgb(255 255 255 / 18%); border-radius: 12px; background: rgb(255 255 255 / 9%); }
+.stat-cards span { display: block; color: #b9d4e9; font-size: .74rem; }
+.stat-cards strong { font-size: 1.45rem; }
+.detail-note { margin-bottom: .4rem; font-size: .86rem; }
+.source-link { color: #f8d98c; font-size: .85rem; font-weight: 800; text-decoration: underline; }
+.content-section { margin-top: 3rem; }
+.section-heading { display: flex; align-items: end; justify-content: space-between; gap: 1rem; }
+.stats-table-wrap { overflow-x: auto; border: 1px solid #dce4ef; border-radius: 16px; background: #fff; }
+.stats-table { width: 100%; border-collapse: collapse; min-width: 450px; }
+.stats-table th, .stats-table td { padding: .85rem 1rem; border-bottom: 1px solid #edf2f7; text-align: left; }
+.stats-table th { color: #64748b; background: #f8fafc; font-size: .78rem; letter-spacing: .05em; }
+.stats-table tr:last-child td { border-bottom: 0; }
+.kp-cell { color: #a55e00; font-size: 1.1rem; font-weight: 900; }
+.entry-list { display: grid; gap: .8rem; }
+.entry-card { padding: 1rem 1.15rem; border: 1px solid #dce4ef; border-radius: 15px; background: #fff; }
+.entry-heading { display: flex; justify-content: space-between; gap: 1rem; align-items: center; margin-bottom: .8rem; }
+.entry-heading h3 { display: inline; margin: 0 0 0 .45rem; font-size: 1.06rem; }
+.party-kp { color: #9a5a00; font-size: .86rem; white-space: nowrap; }
+.pokemon-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .55rem; }
+.pokemon-chip { display: inline-flex; min-width: 0; align-items: center; gap: .4rem; color: #334155; font-size: .86rem; font-weight: 650; }
+.pokemon-chip img, .pokemon-fallback { width: 28px; height: 28px; border-radius: 50%; flex: 0 0 auto; object-fit: contain; background: #edf2f7; }
+.pokemon-fallback { display: grid; place-items: center; color: #406b91; font-size: .72rem; }
+.entry-note { margin: .7rem 0 0; color: #64748b; font-size: .82rem; }
+.state-message { padding: 1.3rem; border-radius: 12px; background: #fff; color: #64748b; text-align: center; }
+.state-message.error { display: grid; gap: .4rem; color: #9f1239; background: #fff1f2; text-align: left; }
+
+.search-form { max-width: 680px; padding: 1.3rem; border: 1px solid #dce4ef; border-radius: 16px; background: #fff; }
+.search-form label { display: block; margin-bottom: .5rem; font-size: .85rem; font-weight: 800; }
+.search-form > div { display: flex; gap: .6rem; }
+.search-form input { min-width: 0; flex: 1; padding: .7rem .8rem; border: 1px solid #b8c7d9; border-radius: 9px; }
+.search-form button { padding: .7rem 1.1rem; border: 0; border-radius: 9px; background: #1d4f77; color: #fff; font-weight: 800; cursor: pointer; }
+.search-form button:disabled { cursor: wait; opacity: .65; }
+.search-results h2 span { color: #64748b; font-size: .9rem; font-weight: 500; }
+
+@media (max-width: 640px) {
+  .site-header { padding: .8rem 5vw; gap: .8rem; flex-wrap: wrap; }
+  .site-header nav { gap: .85rem; font-size: .82rem; }
+  .content { padding-top: 3rem; }
+  .pokemon-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .entry-heading { align-items: flex-start; flex-direction: column; gap: .45rem; }
+  .search-form > div { flex-direction: column; }
+}

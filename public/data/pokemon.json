@@ -1,0 +1,18 @@
+[
+  { "id": "salamence", "name": "ボーマンダ", "image": "images/pokemon/salamence.png" },
+  { "id": "metagross", "name": "メタグロス", "image": "images/pokemon/metagross.png" },
+  { "id": "zapdos", "name": "サンダー", "image": "images/pokemon/zapdos.png" },
+  { "id": "suicune", "name": "スイクン", "image": "images/pokemon/suicune.png" },
+  { "id": "blissey", "name": "ハピナス", "image": "images/pokemon/blissey.png" },
+  { "id": "snorlax", "name": "カビゴン", "image": "images/pokemon/snorlax.png" },
+  { "id": "heracross", "name": "ヘラクロス", "image": "images/pokemon/heracross.png" },
+  { "id": "milotic", "name": "ミロカロス", "image": "images/pokemon/milotic.png" },
+  { "id": "gengar", "name": "ゲンガー", "image": "images/pokemon/gengar.png" },
+  { "id": "swampert", "name": "ラグラージ", "image": "images/pokemon/swampert.png" },
+  { "id": "raikou", "name": "ライコウ", "image": "images/pokemon/raikou.png" },
+  { "id": "slowbro", "name": "ヤドラン", "image": "images/pokemon/slowbro.png" },
+  { "id": "latios", "name": "ラティオス", "image": "images/pokemon/latios.png" },
+  { "id": "tyranitar", "name": "バンギラス", "image": "images/pokemon/tyranitar.png" },
+  { "id": "venusaur", "name": "フシギバナ", "image": "images/pokemon/venusaur.png" },
+  { "id": "starmie", "name": "スターミー", "image": "images/pokemon/starmie.png" }
+]
