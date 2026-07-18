@@ -1,35 +1,47 @@
-import type { Entry, Tournament, TournamentDetail } from '../types/api';
+import type { DataVersion, Entry, Tournament, TournamentDetail } from '../types/api';
 
-const API_URL = 'https://script.google.com/macros/s/AKfycbyyPH0W9otYkyb5MKqlHVJ5FkHe7sgcbdgjU9c3RiW_KdKR06xRbs1pHLulKgT1iQ4v/exec';
+const DATA_URL = `${import.meta.env.BASE_URL}data/`;
 
-type ApiSuccess<T> = { ok: true; data: T };
-type ApiFailure = { ok: false; error: { status: number; code: string; message: string } };
-type ApiResponse<T> = ApiSuccess<T> | ApiFailure;
-
-async function request<T>(params: Record<string, string>): Promise<T> {
-  const url = new URL(API_URL);
-  url.search = new URLSearchParams(params).toString();
-
-  const response = await fetch(url, { headers: { Accept: 'application/json' } });
+async function request<T>(fileName: string): Promise<T> {
+  const response = await fetch(`${DATA_URL}${fileName}`, { headers: { Accept: 'application/json' } });
   if (!response.ok) {
-    throw new Error('APIへ接続できませんでした。時間をおいて再試行してください。');
+    throw new Error('公開データを読み込めませんでした。時間をおいて再試行してください。');
   }
 
-  const payload = (await response.json()) as ApiResponse<T>;
-  if (!payload.ok) {
-    throw new Error(payload.error.message);
+  try {
+    return (await response.json()) as T;
+  } catch {
+    throw new Error('公開データの形式が不正です。');
   }
-  return payload.data;
 }
 
 export function fetchTournaments() {
-  return request<Tournament[]>({ resource: 'tournaments' });
+  return request<Tournament[]>('tournaments.json');
 }
 
-export function fetchTournament(tournamentId: string) {
-  return request<TournamentDetail>({ resource: 'tournament', id: tournamentId });
+async function fetchTournamentDetails() {
+  return request<Record<string, TournamentDetail>>('tournament-details.json');
 }
 
-export function searchUsers(query: string) {
-  return request<{ query: string; results: Entry[] }>({ resource: 'users', q: query });
+export async function fetchTournament(tournamentId: string) {
+  const details = await fetchTournamentDetails();
+  const detail = details[tournamentId];
+  if (!detail) {
+    throw new Error('指定された大会の公開データが見つかりません。');
+  }
+  return detail;
+}
+
+export async function searchUsers(query: string) {
+  const normalizedQuery = query.trim().normalize('NFKC').toLocaleLowerCase('ja');
+  const details = await fetchTournamentDetails();
+  const results = Object.values(details)
+    .flatMap((detail) => detail.entries)
+    .filter((entry) => entry.user_name.normalize('NFKC').toLocaleLowerCase('ja').includes(normalizedQuery));
+
+  return { query, results };
+}
+
+export function fetchDataVersion() {
+  return request<DataVersion>('version.json');
 }

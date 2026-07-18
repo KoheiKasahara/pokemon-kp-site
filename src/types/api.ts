@@ -32,6 +32,11 @@ export type TournamentDetail = {
   entries: Entry[];
 };
 
+export type DataVersion = {
+  generated_at: string | null;
+  tournament_count: number;
+};
+
 export type PokemonDefinition = {
   id: string;
   name: string;

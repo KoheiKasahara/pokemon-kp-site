@@ -29,6 +29,10 @@ jobs:
           cache: npm
       - name: Install dependencies
         run: npm ci
+      - name: Generate static data
+        run: npm run generate:data
+        env:
+          GAS_API_URL: ${{ secrets.GAS_API_URL }}
       - name: Build site
         run: npm run build
       - name: Configure GitHub Pages

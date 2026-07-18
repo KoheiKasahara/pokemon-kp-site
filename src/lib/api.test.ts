@@ -16,54 +16,54 @@ describe('API client', () => {
     fetchMock.mockReset();
   });
 
-  it('大会一覧を取得するリクエストを送る', async () => {
+  it('大会一覧の静的JSONを取得する', async () => {
     vi.stubGlobal('fetch', fetchMock);
-    mockJsonResponse({ ok: true, data: [] });
+    mockJsonResponse([]);
 
     await expect(fetchTournaments()).resolves.toEqual([]);
 
-    const requestUrl = new URL(fetchMock.mock.calls[0][0]);
-    expect(requestUrl.searchParams.get('resource')).toBe('tournaments');
+    expect(fetchMock.mock.calls[0][0]).toContain('data/tournaments.json');
   });
 
   it('大会IDを指定して大会詳細を取得する', async () => {
     vi.stubGlobal('fetch', fetchMock);
     const detail = { tournament: {}, pokemon_stats: [], entries: [] };
-    mockJsonResponse({ ok: true, data: detail });
+    mockJsonResponse({ 'tournament 01': detail });
 
     await expect(fetchTournament('tournament 01')).resolves.toEqual(detail);
 
-    const requestUrl = new URL(fetchMock.mock.calls[0][0]);
-    expect(requestUrl.searchParams.get('resource')).toBe('tournament');
-    expect(requestUrl.searchParams.get('id')).toBe('tournament 01');
+    expect(fetchMock.mock.calls[0][0]).toContain('data/tournament-details.json');
   });
 
   it('検索語を指定してユーザーを検索する', async () => {
     vi.stubGlobal('fetch', fetchMock);
-    const result = { query: 'アオイ', results: [] };
-    mockJsonResponse({ ok: true, data: result });
+    mockJsonResponse({
+      'tournament 01': {
+        tournament: {},
+        pokemon_stats: [],
+        entries: [{ entry_id: 'entry-1', user_name: 'アオイ', pokemon: [], party_kp: 0 }],
+      },
+    });
 
-    await expect(searchUsers('アオイ')).resolves.toEqual(result);
+    await expect(searchUsers('アオイ')).resolves.toEqual({
+      query: 'アオイ',
+      results: [{ entry_id: 'entry-1', user_name: 'アオイ', pokemon: [], party_kp: 0 }],
+    });
 
-    const requestUrl = new URL(fetchMock.mock.calls[0][0]);
-    expect(requestUrl.searchParams.get('resource')).toBe('users');
-    expect(requestUrl.searchParams.get('q')).toBe('アオイ');
+    expect(fetchMock.mock.calls[0][0]).toContain('data/tournament-details.json');
   });
 
-  it('HTTPエラー時は接続エラーを返す', async () => {
+  it('HTTPエラー時は公開データの読み込みエラーを返す', async () => {
     vi.stubGlobal('fetch', fetchMock);
     mockJsonResponse({}, false);
 
-    await expect(fetchTournaments()).rejects.toThrow('APIへ接続できませんでした。時間をおいて再試行してください。');
+    await expect(fetchTournaments()).rejects.toThrow('公開データを読み込めませんでした。時間をおいて再試行してください。');
   });
 
-  it('APIが返したエラー内容をそのまま返す', async () => {
+  it('存在しない大会IDはエラーにする', async () => {
     vi.stubGlobal('fetch', fetchMock);
-    mockJsonResponse({
-      ok: false,
-      error: { status: 400, code: 'INVALID_QUERY', message: '検索語を入力してください。' },
-    });
+    mockJsonResponse({});
 
-    await expect(searchUsers('')).rejects.toThrow('検索語を入力してください。');
+    await expect(fetchTournament('unknown')).rejects.toThrow('指定された大会の公開データが見つかりません。');
   });
 });

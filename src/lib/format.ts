@@ -14,3 +14,15 @@ export function formatRate(rate: number) {
     maximumFractionDigits: 1,
   }).format(rate);
 }
+
+export function formatDateTime(value: string) {
+  const date = new Date(value);
+  return new Intl.DateTimeFormat('ja-JP', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+    hour: '2-digit',
+    minute: '2-digit',
+    timeZone: 'Asia/Tokyo',
+  }).format(date);
+}
