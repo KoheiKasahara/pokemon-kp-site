@@ -24,6 +24,6 @@ npm run build
 ## ポケモン画像
 
 - ポケモン一覧: `public/data/pokemon.json`
-- 画像: `public/images/pokemon/`
+- エメラルド画像: `public/image/emerald/`（全国図鑑番号の PNG）
 
 JSONの `name` はスプレッドシートに入力するポケモン名と完全に一致させる。画像が未配置・取得失敗の場合は、名前の頭文字を表示する。
