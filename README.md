@@ -19,7 +19,39 @@ npm run build
 
 ## GitHub Pagesへの公開
 
-`.github/workflows/deploy-pages.yml` を含めてGitHubの `main` ブランチへpushする。リポジトリの **Settings → Pages** で公開元に **GitHub Actions** を選択すると、以後は `main` へのpushごとに自動公開される。
+`.github/workflows/deploy-pages.yml` を含めてGitHubの `main` ブランチへpushする。リポジトリの **Settings → Pages** で公開元に **GitHub Actions** を選択すると、以後は次の操作で公開される。
+
+- `main` ブランチへのpush
+- GitHub Actions画面からの手動実行
+- スプレッドシートの「サイト更新」ボタン
+
+## スプレッドシートからサイトを更新する
+
+`docs/apps-script/publish-site.gs` を、対象スプレッドシートに紐づくApps Scriptプロジェクトへコピーする。
+
+### 1. GitHubトークンを作成する
+
+Fine-grained personal access tokenを作成し、対象リポジトリを `pokemon-kp-site` のみに限定する。Repository permissionsの **Contents** を **Read and write** に設定する。
+
+### 2. Apps Scriptへトークンを保存する
+
+Apps Scriptの **プロジェクトの設定 → スクリプト プロパティ** に次を登録する。
+
+| プロパティ | 値 |
+| --- | --- |
+| `GITHUB_TOKEN` | 作成したGitHubトークン |
+
+トークンはスプレッドシートのセルやソースコードへ直接記載しない。
+
+### 3. 更新ボタンを配置する
+
+スプレッドシートで **挿入 → 図形描画** または **挿入 → 画像** からボタンを配置し、メニューから **スクリプトを割り当て** を選択する。関数名には次を入力する。
+
+```text
+publishSite
+```
+
+初回実行時はGoogleの権限確認が表示される。許可後、ボタンを押すと `repository_dispatch` によりGitHub Pagesのデプロイが開始される。
 
 ## ポケモン画像
 
