@@ -1,18 +1,1932 @@
 [
-  { "id": "salamence", "name": "ボーマンダ", "image": "image/emerald/373.png" },
-  { "id": "metagross", "name": "メタグロス", "image": "image/emerald/376.png" },
-  { "id": "zapdos", "name": "サンダー", "image": "image/emerald/145.png" },
-  { "id": "suicune", "name": "スイクン", "image": "image/emerald/245.png" },
-  { "id": "blissey", "name": "ハピナス", "image": "image/emerald/242.png" },
-  { "id": "snorlax", "name": "カビゴン", "image": "image/emerald/143.png" },
-  { "id": "heracross", "name": "ヘラクロス", "image": "image/emerald/214.png" },
-  { "id": "milotic", "name": "ミロカロス", "image": "image/emerald/350.png" },
-  { "id": "gengar", "name": "ゲンガー", "image": "image/emerald/094.png" },
-  { "id": "swampert", "name": "ラグラージ", "image": "image/emerald/260.png" },
-  { "id": "raikou", "name": "ライコウ", "image": "image/emerald/243.png" },
-  { "id": "slowbro", "name": "ヤドラン", "image": "image/emerald/080.png" },
-  { "id": "latios", "name": "ラティオス", "image": "image/emerald/381.png" },
-  { "id": "tyranitar", "name": "バンギラス", "image": "image/emerald/248.png" },
-  { "id": "venusaur", "name": "フシギバナ", "image": "image/emerald/003.png" },
-  { "id": "starmie", "name": "スターミー", "image": "image/emerald/121.png" }
+  {
+    "id": "pokedex-001",
+    "name": "フシギダネ",
+    "image": "image/emerald/001.png"
+  },
+  {
+    "id": "pokedex-002",
+    "name": "フシギソウ",
+    "image": "image/emerald/002.png"
+  },
+  {
+    "id": "pokedex-003",
+    "name": "フシギバナ",
+    "image": "image/emerald/003.png"
+  },
+  {
+    "id": "pokedex-004",
+    "name": "ヒトカゲ",
+    "image": "image/emerald/004.png"
+  },
+  {
+    "id": "pokedex-005",
+    "name": "リザード",
+    "image": "image/emerald/005.png"
+  },
+  {
+    "id": "pokedex-006",
+    "name": "リザードン",
+    "image": "image/emerald/006.png"
+  },
+  {
+    "id": "pokedex-007",
+    "name": "ゼニガメ",
+    "image": "image/emerald/007.png"
+  },
+  {
+    "id": "pokedex-008",
+    "name": "カメール",
+    "image": "image/emerald/008.png"
+  },
+  {
+    "id": "pokedex-009",
+    "name": "カメックス",
+    "image": "image/emerald/009.png"
+  },
+  {
+    "id": "pokedex-010",
+    "name": "キャタピー",
+    "image": "image/emerald/010.png"
+  },
+  {
+    "id": "pokedex-011",
+    "name": "トランセル",
+    "image": "image/emerald/011.png"
+  },
+  {
+    "id": "pokedex-012",
+    "name": "バタフリー",
+    "image": "image/emerald/012.png"
+  },
+  {
+    "id": "pokedex-013",
+    "name": "ビードル",
+    "image": "image/emerald/013.png"
+  },
+  {
+    "id": "pokedex-014",
+    "name": "コクーン",
+    "image": "image/emerald/014.png"
+  },
+  {
+    "id": "pokedex-015",
+    "name": "スピアー",
+    "image": "image/emerald/015.png"
+  },
+  {
+    "id": "pokedex-016",
+    "name": "ポッポ",
+    "image": "image/emerald/016.png"
+  },
+  {
+    "id": "pokedex-017",
+    "name": "ピジョン",
+    "image": "image/emerald/017.png"
+  },
+  {
+    "id": "pokedex-018",
+    "name": "ピジョット",
+    "image": "image/emerald/018.png"
+  },
+  {
+    "id": "pokedex-019",
+    "name": "コラッタ",
+    "image": "image/emerald/019.png"
+  },
+  {
+    "id": "pokedex-020",
+    "name": "ラッタ",
+    "image": "image/emerald/020.png"
+  },
+  {
+    "id": "pokedex-021",
+    "name": "オニスズメ",
+    "image": "image/emerald/021.png"
+  },
+  {
+    "id": "pokedex-022",
+    "name": "オニドリル",
+    "image": "image/emerald/022.png"
+  },
+  {
+    "id": "pokedex-023",
+    "name": "アーボ",
+    "image": "image/emerald/023.png"
+  },
+  {
+    "id": "pokedex-024",
+    "name": "アーボック",
+    "image": "image/emerald/024.png"
+  },
+  {
+    "id": "pokedex-025",
+    "name": "ピカチュウ",
+    "image": "image/emerald/025.png"
+  },
+  {
+    "id": "pokedex-026",
+    "name": "ライチュウ",
+    "image": "image/emerald/026.png"
+  },
+  {
+    "id": "pokedex-027",
+    "name": "サンド",
+    "image": "image/emerald/027.png"
+  },
+  {
+    "id": "pokedex-028",
+    "name": "サンドパン",
+    "image": "image/emerald/028.png"
+  },
+  {
+    "id": "pokedex-029",
+    "name": "ニドラン♀",
+    "image": "image/emerald/029.png"
+  },
+  {
+    "id": "pokedex-030",
+    "name": "ニドリーナ",
+    "image": "image/emerald/030.png"
+  },
+  {
+    "id": "pokedex-031",
+    "name": "ニドクイン",
+    "image": "image/emerald/031.png"
+  },
+  {
+    "id": "pokedex-032",
+    "name": "ニドラン♂",
+    "image": "image/emerald/032.png"
+  },
+  {
+    "id": "pokedex-033",
+    "name": "ニドリーノ",
+    "image": "image/emerald/033.png"
+  },
+  {
+    "id": "pokedex-034",
+    "name": "ニドキング",
+    "image": "image/emerald/034.png"
+  },
+  {
+    "id": "pokedex-035",
+    "name": "ピッピ",
+    "image": "image/emerald/035.png"
+  },
+  {
+    "id": "pokedex-036",
+    "name": "ピクシー",
+    "image": "image/emerald/036.png"
+  },
+  {
+    "id": "pokedex-037",
+    "name": "ロコン",
+    "image": "image/emerald/037.png"
+  },
+  {
+    "id": "pokedex-038",
+    "name": "キュウコン",
+    "image": "image/emerald/038.png"
+  },
+  {
+    "id": "pokedex-039",
+    "name": "プリン",
+    "image": "image/emerald/039.png"
+  },
+  {
+    "id": "pokedex-040",
+    "name": "プクリン",
+    "image": "image/emerald/040.png"
+  },
+  {
+    "id": "pokedex-041",
+    "name": "ズバット",
+    "image": "image/emerald/041.png"
+  },
+  {
+    "id": "pokedex-042",
+    "name": "ゴルバット",
+    "image": "image/emerald/042.png"
+  },
+  {
+    "id": "pokedex-043",
+    "name": "ナゾノクサ",
+    "image": "image/emerald/043.png"
+  },
+  {
+    "id": "pokedex-044",
+    "name": "クサイハナ",
+    "image": "image/emerald/044.png"
+  },
+  {
+    "id": "pokedex-045",
+    "name": "ラフレシア",
+    "image": "image/emerald/045.png"
+  },
+  {
+    "id": "pokedex-046",
+    "name": "パラス",
+    "image": "image/emerald/046.png"
+  },
+  {
+    "id": "pokedex-047",
+    "name": "パラセクト",
+    "image": "image/emerald/047.png"
+  },
+  {
+    "id": "pokedex-048",
+    "name": "コンパン",
+    "image": "image/emerald/048.png"
+  },
+  {
+    "id": "pokedex-049",
+    "name": "モルフォン",
+    "image": "image/emerald/049.png"
+  },
+  {
+    "id": "pokedex-050",
+    "name": "ディグダ",
+    "image": "image/emerald/050.png"
+  },
+  {
+    "id": "pokedex-051",
+    "name": "ダグトリオ",
+    "image": "image/emerald/051.png"
+  },
+  {
+    "id": "pokedex-052",
+    "name": "ニャース",
+    "image": "image/emerald/052.png"
+  },
+  {
+    "id": "pokedex-053",
+    "name": "ペルシアン",
+    "image": "image/emerald/053.png"
+  },
+  {
+    "id": "pokedex-054",
+    "name": "コダック",
+    "image": "image/emerald/054.png"
+  },
+  {
+    "id": "pokedex-055",
+    "name": "ゴルダック",
+    "image": "image/emerald/055.png"
+  },
+  {
+    "id": "pokedex-056",
+    "name": "マンキー",
+    "image": "image/emerald/056.png"
+  },
+  {
+    "id": "pokedex-057",
+    "name": "オコリザル",
+    "image": "image/emerald/057.png"
+  },
+  {
+    "id": "pokedex-058",
+    "name": "ガーディ",
+    "image": "image/emerald/058.png"
+  },
+  {
+    "id": "pokedex-059",
+    "name": "ウインディ",
+    "image": "image/emerald/059.png"
+  },
+  {
+    "id": "pokedex-060",
+    "name": "ニョロモ",
+    "image": "image/emerald/060.png"
+  },
+  {
+    "id": "pokedex-061",
+    "name": "ニョロゾ",
+    "image": "image/emerald/061.png"
+  },
+  {
+    "id": "pokedex-062",
+    "name": "ニョロボン",
+    "image": "image/emerald/062.png"
+  },
+  {
+    "id": "pokedex-063",
+    "name": "ケーシィ",
+    "image": "image/emerald/063.png"
+  },
+  {
+    "id": "pokedex-064",
+    "name": "ユンゲラー",
+    "image": "image/emerald/064.png"
+  },
+  {
+    "id": "pokedex-065",
+    "name": "フーディン",
+    "image": "image/emerald/065.png"
+  },
+  {
+    "id": "pokedex-066",
+    "name": "ワンリキー",
+    "image": "image/emerald/066.png"
+  },
+  {
+    "id": "pokedex-067",
+    "name": "ゴーリキー",
+    "image": "image/emerald/067.png"
+  },
+  {
+    "id": "pokedex-068",
+    "name": "カイリキー",
+    "image": "image/emerald/068.png"
+  },
+  {
+    "id": "pokedex-069",
+    "name": "マダツボミ",
+    "image": "image/emerald/069.png"
+  },
+  {
+    "id": "pokedex-070",
+    "name": "ウツドン",
+    "image": "image/emerald/070.png"
+  },
+  {
+    "id": "pokedex-071",
+    "name": "ウツボット",
+    "image": "image/emerald/071.png"
+  },
+  {
+    "id": "pokedex-072",
+    "name": "メノクラゲ",
+    "image": "image/emerald/072.png"
+  },
+  {
+    "id": "pokedex-073",
+    "name": "ドククラゲ",
+    "image": "image/emerald/073.png"
+  },
+  {
+    "id": "pokedex-074",
+    "name": "イシツブテ",
+    "image": "image/emerald/074.png"
+  },
+  {
+    "id": "pokedex-075",
+    "name": "ゴローン",
+    "image": "image/emerald/075.png"
+  },
+  {
+    "id": "pokedex-076",
+    "name": "ゴローニャ",
+    "image": "image/emerald/076.png"
+  },
+  {
+    "id": "pokedex-077",
+    "name": "ポニータ",
+    "image": "image/emerald/077.png"
+  },
+  {
+    "id": "pokedex-078",
+    "name": "ギャロップ",
+    "image": "image/emerald/078.png"
+  },
+  {
+    "id": "pokedex-079",
+    "name": "ヤドン",
+    "image": "image/emerald/079.png"
+  },
+  {
+    "id": "pokedex-080",
+    "name": "ヤドラン",
+    "image": "image/emerald/080.png"
+  },
+  {
+    "id": "pokedex-081",
+    "name": "コイル",
+    "image": "image/emerald/081.png"
+  },
+  {
+    "id": "pokedex-082",
+    "name": "レアコイル",
+    "image": "image/emerald/082.png"
+  },
+  {
+    "id": "pokedex-083",
+    "name": "カモネギ",
+    "image": "image/emerald/083.png"
+  },
+  {
+    "id": "pokedex-084",
+    "name": "ドードー",
+    "image": "image/emerald/084.png"
+  },
+  {
+    "id": "pokedex-085",
+    "name": "ドードリオ",
+    "image": "image/emerald/085.png"
+  },
+  {
+    "id": "pokedex-086",
+    "name": "パウワウ",
+    "image": "image/emerald/086.png"
+  },
+  {
+    "id": "pokedex-087",
+    "name": "ジュゴン",
+    "image": "image/emerald/087.png"
+  },
+  {
+    "id": "pokedex-088",
+    "name": "ベトベター",
+    "image": "image/emerald/088.png"
+  },
+  {
+    "id": "pokedex-089",
+    "name": "ベトベトン",
+    "image": "image/emerald/089.png"
+  },
+  {
+    "id": "pokedex-090",
+    "name": "シェルダー",
+    "image": "image/emerald/090.png"
+  },
+  {
+    "id": "pokedex-091",
+    "name": "パルシェン",
+    "image": "image/emerald/091.png"
+  },
+  {
+    "id": "pokedex-092",
+    "name": "ゴース",
+    "image": "image/emerald/092.png"
+  },
+  {
+    "id": "pokedex-093",
+    "name": "ゴースト",
+    "image": "image/emerald/093.png"
+  },
+  {
+    "id": "pokedex-094",
+    "name": "ゲンガー",
+    "image": "image/emerald/094.png"
+  },
+  {
+    "id": "pokedex-095",
+    "name": "イワーク",
+    "image": "image/emerald/095.png"
+  },
+  {
+    "id": "pokedex-096",
+    "name": "スリープ",
+    "image": "image/emerald/096.png"
+  },
+  {
+    "id": "pokedex-097",
+    "name": "スリーパー",
+    "image": "image/emerald/097.png"
+  },
+  {
+    "id": "pokedex-098",
+    "name": "クラブ",
+    "image": "image/emerald/098.png"
+  },
+  {
+    "id": "pokedex-099",
+    "name": "キングラー",
+    "image": "image/emerald/099.png"
+  },
+  {
+    "id": "pokedex-100",
+    "name": "ビリリダマ",
+    "image": "image/emerald/100.png"
+  },
+  {
+    "id": "pokedex-101",
+    "name": "マルマイン",
+    "image": "image/emerald/101.png"
+  },
+  {
+    "id": "pokedex-102",
+    "name": "タマタマ",
+    "image": "image/emerald/102.png"
+  },
+  {
+    "id": "pokedex-103",
+    "name": "ナッシー",
+    "image": "image/emerald/103.png"
+  },
+  {
+    "id": "pokedex-104",
+    "name": "カラカラ",
+    "image": "image/emerald/104.png"
+  },
+  {
+    "id": "pokedex-105",
+    "name": "ガラガラ",
+    "image": "image/emerald/105.png"
+  },
+  {
+    "id": "pokedex-106",
+    "name": "サワムラー",
+    "image": "image/emerald/106.png"
+  },
+  {
+    "id": "pokedex-107",
+    "name": "エビワラー",
+    "image": "image/emerald/107.png"
+  },
+  {
+    "id": "pokedex-108",
+    "name": "ベロリンガ",
+    "image": "image/emerald/108.png"
+  },
+  {
+    "id": "pokedex-109",
+    "name": "ドガース",
+    "image": "image/emerald/109.png"
+  },
+  {
+    "id": "pokedex-110",
+    "name": "マタドガス",
+    "image": "image/emerald/110.png"
+  },
+  {
+    "id": "pokedex-111",
+    "name": "サイホーン",
+    "image": "image/emerald/111.png"
+  },
+  {
+    "id": "pokedex-112",
+    "name": "サイドン",
+    "image": "image/emerald/112.png"
+  },
+  {
+    "id": "pokedex-113",
+    "name": "ラッキー",
+    "image": "image/emerald/113.png"
+  },
+  {
+    "id": "pokedex-114",
+    "name": "モンジャラ",
+    "image": "image/emerald/114.png"
+  },
+  {
+    "id": "pokedex-115",
+    "name": "ガルーラ",
+    "image": "image/emerald/115.png"
+  },
+  {
+    "id": "pokedex-116",
+    "name": "タッツー",
+    "image": "image/emerald/116.png"
+  },
+  {
+    "id": "pokedex-117",
+    "name": "シードラ",
+    "image": "image/emerald/117.png"
+  },
+  {
+    "id": "pokedex-118",
+    "name": "トサキント",
+    "image": "image/emerald/118.png"
+  },
+  {
+    "id": "pokedex-119",
+    "name": "アズマオウ",
+    "image": "image/emerald/119.png"
+  },
+  {
+    "id": "pokedex-120",
+    "name": "ヒトデマン",
+    "image": "image/emerald/120.png"
+  },
+  {
+    "id": "pokedex-121",
+    "name": "スターミー",
+    "image": "image/emerald/121.png"
+  },
+  {
+    "id": "pokedex-122",
+    "name": "バリヤード",
+    "image": "image/emerald/122.png"
+  },
+  {
+    "id": "pokedex-123",
+    "name": "ストライク",
+    "image": "image/emerald/123.png"
+  },
+  {
+    "id": "pokedex-124",
+    "name": "ルージュラ",
+    "image": "image/emerald/124.png"
+  },
+  {
+    "id": "pokedex-125",
+    "name": "エレブー",
+    "image": "image/emerald/125.png"
+  },
+  {
+    "id": "pokedex-126",
+    "name": "ブーバー",
+    "image": "image/emerald/126.png"
+  },
+  {
+    "id": "pokedex-127",
+    "name": "カイロス",
+    "image": "image/emerald/127.png"
+  },
+  {
+    "id": "pokedex-128",
+    "name": "ケンタロス",
+    "image": "image/emerald/128.png"
+  },
+  {
+    "id": "pokedex-129",
+    "name": "コイキング",
+    "image": "image/emerald/129.png"
+  },
+  {
+    "id": "pokedex-130",
+    "name": "ギャラドス",
+    "image": "image/emerald/130.png"
+  },
+  {
+    "id": "pokedex-131",
+    "name": "ラプラス",
+    "image": "image/emerald/131.png"
+  },
+  {
+    "id": "pokedex-132",
+    "name": "メタモン",
+    "image": "image/emerald/132.png"
+  },
+  {
+    "id": "pokedex-133",
+    "name": "イーブイ",
+    "image": "image/emerald/133.png"
+  },
+  {
+    "id": "pokedex-134",
+    "name": "シャワーズ",
+    "image": "image/emerald/134.png"
+  },
+  {
+    "id": "pokedex-135",
+    "name": "サンダース",
+    "image": "image/emerald/135.png"
+  },
+  {
+    "id": "pokedex-136",
+    "name": "ブースター",
+    "image": "image/emerald/136.png"
+  },
+  {
+    "id": "pokedex-137",
+    "name": "ポリゴン",
+    "image": "image/emerald/137.png"
+  },
+  {
+    "id": "pokedex-138",
+    "name": "オムナイト",
+    "image": "image/emerald/138.png"
+  },
+  {
+    "id": "pokedex-139",
+    "name": "オムスター",
+    "image": "image/emerald/139.png"
+  },
+  {
+    "id": "pokedex-140",
+    "name": "カブト",
+    "image": "image/emerald/140.png"
+  },
+  {
+    "id": "pokedex-141",
+    "name": "カブトプス",
+    "image": "image/emerald/141.png"
+  },
+  {
+    "id": "pokedex-142",
+    "name": "プテラ",
+    "image": "image/emerald/142.png"
+  },
+  {
+    "id": "pokedex-143",
+    "name": "カビゴン",
+    "image": "image/emerald/143.png"
+  },
+  {
+    "id": "pokedex-144",
+    "name": "フリーザー",
+    "image": "image/emerald/144.png"
+  },
+  {
+    "id": "pokedex-145",
+    "name": "サンダー",
+    "image": "image/emerald/145.png"
+  },
+  {
+    "id": "pokedex-146",
+    "name": "ファイヤー",
+    "image": "image/emerald/146.png"
+  },
+  {
+    "id": "pokedex-147",
+    "name": "ミニリュウ",
+    "image": "image/emerald/147.png"
+  },
+  {
+    "id": "pokedex-148",
+    "name": "ハクリュー",
+    "image": "image/emerald/148.png"
+  },
+  {
+    "id": "pokedex-149",
+    "name": "カイリュー",
+    "image": "image/emerald/149.png"
+  },
+  {
+    "id": "pokedex-150",
+    "name": "ミュウツー",
+    "image": "image/emerald/150.png"
+  },
+  {
+    "id": "pokedex-151",
+    "name": "ミュウ",
+    "image": "image/emerald/151.png"
+  },
+  {
+    "id": "pokedex-152",
+    "name": "チコリータ",
+    "image": "image/emerald/152.png"
+  },
+  {
+    "id": "pokedex-153",
+    "name": "ベイリーフ",
+    "image": "image/emerald/153.png"
+  },
+  {
+    "id": "pokedex-154",
+    "name": "メガニウム",
+    "image": "image/emerald/154.png"
+  },
+  {
+    "id": "pokedex-155",
+    "name": "ヒノアラシ",
+    "image": "image/emerald/155.png"
+  },
+  {
+    "id": "pokedex-156",
+    "name": "マグマラシ",
+    "image": "image/emerald/156.png"
+  },
+  {
+    "id": "pokedex-157",
+    "name": "バクフーン",
+    "image": "image/emerald/157.png"
+  },
+  {
+    "id": "pokedex-158",
+    "name": "ワニノコ",
+    "image": "image/emerald/158.png"
+  },
+  {
+    "id": "pokedex-159",
+    "name": "アリゲイツ",
+    "image": "image/emerald/159.png"
+  },
+  {
+    "id": "pokedex-160",
+    "name": "オーダイル",
+    "image": "image/emerald/160.png"
+  },
+  {
+    "id": "pokedex-161",
+    "name": "オタチ",
+    "image": "image/emerald/161.png"
+  },
+  {
+    "id": "pokedex-162",
+    "name": "オオタチ",
+    "image": "image/emerald/162.png"
+  },
+  {
+    "id": "pokedex-163",
+    "name": "ホーホー",
+    "image": "image/emerald/163.png"
+  },
+  {
+    "id": "pokedex-164",
+    "name": "ヨルノズク",
+    "image": "image/emerald/164.png"
+  },
+  {
+    "id": "pokedex-165",
+    "name": "レディバ",
+    "image": "image/emerald/165.png"
+  },
+  {
+    "id": "pokedex-166",
+    "name": "レディアン",
+    "image": "image/emerald/166.png"
+  },
+  {
+    "id": "pokedex-167",
+    "name": "イトマル",
+    "image": "image/emerald/167.png"
+  },
+  {
+    "id": "pokedex-168",
+    "name": "アリアドス",
+    "image": "image/emerald/168.png"
+  },
+  {
+    "id": "pokedex-169",
+    "name": "クロバット",
+    "image": "image/emerald/169.png"
+  },
+  {
+    "id": "pokedex-170",
+    "name": "チョンチー",
+    "image": "image/emerald/170.png"
+  },
+  {
+    "id": "pokedex-171",
+    "name": "ランターン",
+    "image": "image/emerald/171.png"
+  },
+  {
+    "id": "pokedex-172",
+    "name": "ピチュー",
+    "image": "image/emerald/172.png"
+  },
+  {
+    "id": "pokedex-173",
+    "name": "ピィ",
+    "image": "image/emerald/173.png"
+  },
+  {
+    "id": "pokedex-174",
+    "name": "ププリン",
+    "image": "image/emerald/174.png"
+  },
+  {
+    "id": "pokedex-175",
+    "name": "トゲピー",
+    "image": "image/emerald/175.png"
+  },
+  {
+    "id": "pokedex-176",
+    "name": "トゲチック",
+    "image": "image/emerald/176.png"
+  },
+  {
+    "id": "pokedex-177",
+    "name": "ネイティ",
+    "image": "image/emerald/177.png"
+  },
+  {
+    "id": "pokedex-178",
+    "name": "ネイティオ",
+    "image": "image/emerald/178.png"
+  },
+  {
+    "id": "pokedex-179",
+    "name": "メリープ",
+    "image": "image/emerald/179.png"
+  },
+  {
+    "id": "pokedex-180",
+    "name": "モココ",
+    "image": "image/emerald/180.png"
+  },
+  {
+    "id": "pokedex-181",
+    "name": "デンリュウ",
+    "image": "image/emerald/181.png"
+  },
+  {
+    "id": "pokedex-182",
+    "name": "キレイハナ",
+    "image": "image/emerald/182.png"
+  },
+  {
+    "id": "pokedex-183",
+    "name": "マリル",
+    "image": "image/emerald/183.png"
+  },
+  {
+    "id": "pokedex-184",
+    "name": "マリルリ",
+    "image": "image/emerald/184.png"
+  },
+  {
+    "id": "pokedex-185",
+    "name": "ウソッキー",
+    "image": "image/emerald/185.png"
+  },
+  {
+    "id": "pokedex-186",
+    "name": "ニョロトノ",
+    "image": "image/emerald/186.png"
+  },
+  {
+    "id": "pokedex-187",
+    "name": "ハネッコ",
+    "image": "image/emerald/187.png"
+  },
+  {
+    "id": "pokedex-188",
+    "name": "ポポッコ",
+    "image": "image/emerald/188.png"
+  },
+  {
+    "id": "pokedex-189",
+    "name": "ワタッコ",
+    "image": "image/emerald/189.png"
+  },
+  {
+    "id": "pokedex-190",
+    "name": "エイパム",
+    "image": "image/emerald/190.png"
+  },
+  {
+    "id": "pokedex-191",
+    "name": "ヒマナッツ",
+    "image": "image/emerald/191.png"
+  },
+  {
+    "id": "pokedex-192",
+    "name": "キマワリ",
+    "image": "image/emerald/192.png"
+  },
+  {
+    "id": "pokedex-193",
+    "name": "ヤンヤンマ",
+    "image": "image/emerald/193.png"
+  },
+  {
+    "id": "pokedex-194",
+    "name": "ウパー",
+    "image": "image/emerald/194.png"
+  },
+  {
+    "id": "pokedex-195",
+    "name": "ヌオー",
+    "image": "image/emerald/195.png"
+  },
+  {
+    "id": "pokedex-196",
+    "name": "エーフィ",
+    "image": "image/emerald/196.png"
+  },
+  {
+    "id": "pokedex-197",
+    "name": "ブラッキー",
+    "image": "image/emerald/197.png"
+  },
+  {
+    "id": "pokedex-198",
+    "name": "ヤミカラス",
+    "image": "image/emerald/198.png"
+  },
+  {
+    "id": "pokedex-199",
+    "name": "ヤドキング",
+    "image": "image/emerald/199.png"
+  },
+  {
+    "id": "pokedex-200",
+    "name": "ムウマ",
+    "image": "image/emerald/200.png"
+  },
+  {
+    "id": "pokedex-201",
+    "name": "アンノーン",
+    "image": "image/emerald/201.png"
+  },
+  {
+    "id": "pokedex-202",
+    "name": "ソーナンス",
+    "image": "image/emerald/202.png"
+  },
+  {
+    "id": "pokedex-203",
+    "name": "キリンリキ",
+    "image": "image/emerald/203.png"
+  },
+  {
+    "id": "pokedex-204",
+    "name": "クヌギダマ",
+    "image": "image/emerald/204.png"
+  },
+  {
+    "id": "pokedex-205",
+    "name": "フォレトス",
+    "image": "image/emerald/205.png"
+  },
+  {
+    "id": "pokedex-206",
+    "name": "ノコッチ",
+    "image": "image/emerald/206.png"
+  },
+  {
+    "id": "pokedex-207",
+    "name": "グライガー",
+    "image": "image/emerald/207.png"
+  },
+  {
+    "id": "pokedex-208",
+    "name": "ハガネール",
+    "image": "image/emerald/208.png"
+  },
+  {
+    "id": "pokedex-209",
+    "name": "ブルー",
+    "image": "image/emerald/209.png"
+  },
+  {
+    "id": "pokedex-210",
+    "name": "グランブル",
+    "image": "image/emerald/210.png"
+  },
+  {
+    "id": "pokedex-211",
+    "name": "ハリーセン",
+    "image": "image/emerald/211.png"
+  },
+  {
+    "id": "pokedex-212",
+    "name": "ハッサム",
+    "image": "image/emerald/212.png"
+  },
+  {
+    "id": "pokedex-213",
+    "name": "ツボツボ",
+    "image": "image/emerald/213.png"
+  },
+  {
+    "id": "pokedex-214",
+    "name": "ヘラクロス",
+    "image": "image/emerald/214.png"
+  },
+  {
+    "id": "pokedex-215",
+    "name": "ニューラ",
+    "image": "image/emerald/215.png"
+  },
+  {
+    "id": "pokedex-216",
+    "name": "ヒメグマ",
+    "image": "image/emerald/216.png"
+  },
+  {
+    "id": "pokedex-217",
+    "name": "リングマ",
+    "image": "image/emerald/217.png"
+  },
+  {
+    "id": "pokedex-218",
+    "name": "マグマッグ",
+    "image": "image/emerald/218.png"
+  },
+  {
+    "id": "pokedex-219",
+    "name": "マグカルゴ",
+    "image": "image/emerald/219.png"
+  },
+  {
+    "id": "pokedex-220",
+    "name": "ウリムー",
+    "image": "image/emerald/220.png"
+  },
+  {
+    "id": "pokedex-221",
+    "name": "イノムー",
+    "image": "image/emerald/221.png"
+  },
+  {
+    "id": "pokedex-222",
+    "name": "サニーゴ",
+    "image": "image/emerald/222.png"
+  },
+  {
+    "id": "pokedex-223",
+    "name": "テッポウオ",
+    "image": "image/emerald/223.png"
+  },
+  {
+    "id": "pokedex-224",
+    "name": "オクタン",
+    "image": "image/emerald/224.png"
+  },
+  {
+    "id": "pokedex-225",
+    "name": "デリバード",
+    "image": "image/emerald/225.png"
+  },
+  {
+    "id": "pokedex-226",
+    "name": "マンタイン",
+    "image": "image/emerald/226.png"
+  },
+  {
+    "id": "pokedex-227",
+    "name": "エアームド",
+    "image": "image/emerald/227.png"
+  },
+  {
+    "id": "pokedex-228",
+    "name": "デルビル",
+    "image": "image/emerald/228.png"
+  },
+  {
+    "id": "pokedex-229",
+    "name": "ヘルガー",
+    "image": "image/emerald/229.png"
+  },
+  {
+    "id": "pokedex-230",
+    "name": "キングドラ",
+    "image": "image/emerald/230.png"
+  },
+  {
+    "id": "pokedex-231",
+    "name": "ゴマゾウ",
+    "image": "image/emerald/231.png"
+  },
+  {
+    "id": "pokedex-232",
+    "name": "ドンファン",
+    "image": "image/emerald/232.png"
+  },
+  {
+    "id": "pokedex-233",
+    "name": "ポリゴン２",
+    "image": "image/emerald/233.png"
+  },
+  {
+    "id": "pokedex-234",
+    "name": "オドシシ",
+    "image": "image/emerald/234.png"
+  },
+  {
+    "id": "pokedex-235",
+    "name": "ドーブル",
+    "image": "image/emerald/235.png"
+  },
+  {
+    "id": "pokedex-236",
+    "name": "バルキー",
+    "image": "image/emerald/236.png"
+  },
+  {
+    "id": "pokedex-237",
+    "name": "カポエラー",
+    "image": "image/emerald/237.png"
+  },
+  {
+    "id": "pokedex-238",
+    "name": "ムチュール",
+    "image": "image/emerald/238.png"
+  },
+  {
+    "id": "pokedex-239",
+    "name": "エレキッド",
+    "image": "image/emerald/239.png"
+  },
+  {
+    "id": "pokedex-240",
+    "name": "ブビィ",
+    "image": "image/emerald/240.png"
+  },
+  {
+    "id": "pokedex-241",
+    "name": "ミルタンク",
+    "image": "image/emerald/241.png"
+  },
+  {
+    "id": "pokedex-242",
+    "name": "ハピナス",
+    "image": "image/emerald/242.png"
+  },
+  {
+    "id": "pokedex-243",
+    "name": "ライコウ",
+    "image": "image/emerald/243.png"
+  },
+  {
+    "id": "pokedex-244",
+    "name": "エンテイ",
+    "image": "image/emerald/244.png"
+  },
+  {
+    "id": "pokedex-245",
+    "name": "スイクン",
+    "image": "image/emerald/245.png"
+  },
+  {
+    "id": "pokedex-246",
+    "name": "ヨーギラス",
+    "image": "image/emerald/246.png"
+  },
+  {
+    "id": "pokedex-247",
+    "name": "サナギラス",
+    "image": "image/emerald/247.png"
+  },
+  {
+    "id": "pokedex-248",
+    "name": "バンギラス",
+    "image": "image/emerald/248.png"
+  },
+  {
+    "id": "pokedex-249",
+    "name": "ルギア",
+    "image": "image/emerald/249.png"
+  },
+  {
+    "id": "pokedex-250",
+    "name": "ホウオウ",
+    "image": "image/emerald/250.png"
+  },
+  {
+    "id": "pokedex-251",
+    "name": "セレビィ",
+    "image": "image/emerald/251.png"
+  },
+  {
+    "id": "pokedex-252",
+    "name": "キモリ",
+    "image": "image/emerald/252.png"
+  },
+  {
+    "id": "pokedex-253",
+    "name": "ジュプトル",
+    "image": "image/emerald/253.png"
+  },
+  {
+    "id": "pokedex-254",
+    "name": "ジュカイン",
+    "image": "image/emerald/254.png"
+  },
+  {
+    "id": "pokedex-255",
+    "name": "アチャモ",
+    "image": "image/emerald/255.png"
+  },
+  {
+    "id": "pokedex-256",
+    "name": "ワカシャモ",
+    "image": "image/emerald/256.png"
+  },
+  {
+    "id": "pokedex-257",
+    "name": "バシャーモ",
+    "image": "image/emerald/257.png"
+  },
+  {
+    "id": "pokedex-258",
+    "name": "ミズゴロウ",
+    "image": "image/emerald/258.png"
+  },
+  {
+    "id": "pokedex-259",
+    "name": "ヌマクロー",
+    "image": "image/emerald/259.png"
+  },
+  {
+    "id": "pokedex-260",
+    "name": "ラグラージ",
+    "image": "image/emerald/260.png"
+  },
+  {
+    "id": "pokedex-261",
+    "name": "ポチエナ",
+    "image": "image/emerald/261.png"
+  },
+  {
+    "id": "pokedex-262",
+    "name": "グラエナ",
+    "image": "image/emerald/262.png"
+  },
+  {
+    "id": "pokedex-263",
+    "name": "ジグザグマ",
+    "image": "image/emerald/263.png"
+  },
+  {
+    "id": "pokedex-264",
+    "name": "マッスグマ",
+    "image": "image/emerald/264.png"
+  },
+  {
+    "id": "pokedex-265",
+    "name": "ケムッソ",
+    "image": "image/emerald/265.png"
+  },
+  {
+    "id": "pokedex-266",
+    "name": "カラサリス",
+    "image": "image/emerald/266.png"
+  },
+  {
+    "id": "pokedex-267",
+    "name": "アゲハント",
+    "image": "image/emerald/267.png"
+  },
+  {
+    "id": "pokedex-268",
+    "name": "マユルド",
+    "image": "image/emerald/268.png"
+  },
+  {
+    "id": "pokedex-269",
+    "name": "ドクケイル",
+    "image": "image/emerald/269.png"
+  },
+  {
+    "id": "pokedex-270",
+    "name": "ハスボー",
+    "image": "image/emerald/270.png"
+  },
+  {
+    "id": "pokedex-271",
+    "name": "ハスブレロ",
+    "image": "image/emerald/271.png"
+  },
+  {
+    "id": "pokedex-272",
+    "name": "ルンパッパ",
+    "image": "image/emerald/272.png"
+  },
+  {
+    "id": "pokedex-273",
+    "name": "タネボー",
+    "image": "image/emerald/273.png"
+  },
+  {
+    "id": "pokedex-274",
+    "name": "コノハナ",
+    "image": "image/emerald/274.png"
+  },
+  {
+    "id": "pokedex-275",
+    "name": "ダーテング",
+    "image": "image/emerald/275.png"
+  },
+  {
+    "id": "pokedex-276",
+    "name": "スバメ",
+    "image": "image/emerald/276.png"
+  },
+  {
+    "id": "pokedex-277",
+    "name": "オオスバメ",
+    "image": "image/emerald/277.png"
+  },
+  {
+    "id": "pokedex-278",
+    "name": "キャモメ",
+    "image": "image/emerald/278.png"
+  },
+  {
+    "id": "pokedex-279",
+    "name": "ペリッパー",
+    "image": "image/emerald/279.png"
+  },
+  {
+    "id": "pokedex-280",
+    "name": "ラルトス",
+    "image": "image/emerald/280.png"
+  },
+  {
+    "id": "pokedex-281",
+    "name": "キルリア",
+    "image": "image/emerald/281.png"
+  },
+  {
+    "id": "pokedex-282",
+    "name": "サーナイト",
+    "image": "image/emerald/282.png"
+  },
+  {
+    "id": "pokedex-283",
+    "name": "アメタマ",
+    "image": "image/emerald/283.png"
+  },
+  {
+    "id": "pokedex-284",
+    "name": "アメモース",
+    "image": "image/emerald/284.png"
+  },
+  {
+    "id": "pokedex-285",
+    "name": "キノココ",
+    "image": "image/emerald/285.png"
+  },
+  {
+    "id": "pokedex-286",
+    "name": "キノガッサ",
+    "image": "image/emerald/286.png"
+  },
+  {
+    "id": "pokedex-287",
+    "name": "ナマケロ",
+    "image": "image/emerald/287.png"
+  },
+  {
+    "id": "pokedex-288",
+    "name": "ヤルキモノ",
+    "image": "image/emerald/288.png"
+  },
+  {
+    "id": "pokedex-289",
+    "name": "ケッキング",
+    "image": "image/emerald/289.png"
+  },
+  {
+    "id": "pokedex-290",
+    "name": "ツチニン",
+    "image": "image/emerald/290.png"
+  },
+  {
+    "id": "pokedex-291",
+    "name": "テッカニン",
+    "image": "image/emerald/291.png"
+  },
+  {
+    "id": "pokedex-292",
+    "name": "ヌケニン",
+    "image": "image/emerald/292.png"
+  },
+  {
+    "id": "pokedex-293",
+    "name": "ゴニョニョ",
+    "image": "image/emerald/293.png"
+  },
+  {
+    "id": "pokedex-294",
+    "name": "ドゴーム",
+    "image": "image/emerald/294.png"
+  },
+  {
+    "id": "pokedex-295",
+    "name": "バクオング",
+    "image": "image/emerald/295.png"
+  },
+  {
+    "id": "pokedex-296",
+    "name": "マクノシタ",
+    "image": "image/emerald/296.png"
+  },
+  {
+    "id": "pokedex-297",
+    "name": "ハリテヤマ",
+    "image": "image/emerald/297.png"
+  },
+  {
+    "id": "pokedex-298",
+    "name": "ルリリ",
+    "image": "image/emerald/298.png"
+  },
+  {
+    "id": "pokedex-299",
+    "name": "ノズパス",
+    "image": "image/emerald/299.png"
+  },
+  {
+    "id": "pokedex-300",
+    "name": "エネコ",
+    "image": "image/emerald/300.png"
+  },
+  {
+    "id": "pokedex-301",
+    "name": "エネコロロ",
+    "image": "image/emerald/301.png"
+  },
+  {
+    "id": "pokedex-302",
+    "name": "ヤミラミ",
+    "image": "image/emerald/302.png"
+  },
+  {
+    "id": "pokedex-303",
+    "name": "クチート",
+    "image": "image/emerald/303.png"
+  },
+  {
+    "id": "pokedex-304",
+    "name": "ココドラ",
+    "image": "image/emerald/304.png"
+  },
+  {
+    "id": "pokedex-305",
+    "name": "コドラ",
+    "image": "image/emerald/305.png"
+  },
+  {
+    "id": "pokedex-306",
+    "name": "ボスゴドラ",
+    "image": "image/emerald/306.png"
+  },
+  {
+    "id": "pokedex-307",
+    "name": "アサナン",
+    "image": "image/emerald/307.png"
+  },
+  {
+    "id": "pokedex-308",
+    "name": "チャーレム",
+    "image": "image/emerald/308.png"
+  },
+  {
+    "id": "pokedex-309",
+    "name": "ラクライ",
+    "image": "image/emerald/309.png"
+  },
+  {
+    "id": "pokedex-310",
+    "name": "ライボルト",
+    "image": "image/emerald/310.png"
+  },
+  {
+    "id": "pokedex-311",
+    "name": "プラスル",
+    "image": "image/emerald/311.png"
+  },
+  {
+    "id": "pokedex-312",
+    "name": "マイナン",
+    "image": "image/emerald/312.png"
+  },
+  {
+    "id": "pokedex-313",
+    "name": "バルビート",
+    "image": "image/emerald/313.png"
+  },
+  {
+    "id": "pokedex-314",
+    "name": "イルミーゼ",
+    "image": "image/emerald/314.png"
+  },
+  {
+    "id": "pokedex-315",
+    "name": "ロゼリア",
+    "image": "image/emerald/315.png"
+  },
+  {
+    "id": "pokedex-316",
+    "name": "ゴクリン",
+    "image": "image/emerald/316.png"
+  },
+  {
+    "id": "pokedex-317",
+    "name": "マルノーム",
+    "image": "image/emerald/317.png"
+  },
+  {
+    "id": "pokedex-318",
+    "name": "キバニア",
+    "image": "image/emerald/318.png"
+  },
+  {
+    "id": "pokedex-319",
+    "name": "サメハダー",
+    "image": "image/emerald/319.png"
+  },
+  {
+    "id": "pokedex-320",
+    "name": "ホエルコ",
+    "image": "image/emerald/320.png"
+  },
+  {
+    "id": "pokedex-321",
+    "name": "ホエルオー",
+    "image": "image/emerald/321.png"
+  },
+  {
+    "id": "pokedex-322",
+    "name": "ドンメル",
+    "image": "image/emerald/322.png"
+  },
+  {
+    "id": "pokedex-323",
+    "name": "バクーダ",
+    "image": "image/emerald/323.png"
+  },
+  {
+    "id": "pokedex-324",
+    "name": "コータス",
+    "image": "image/emerald/324.png"
+  },
+  {
+    "id": "pokedex-325",
+    "name": "バネブー",
+    "image": "image/emerald/325.png"
+  },
+  {
+    "id": "pokedex-326",
+    "name": "ブーピッグ",
+    "image": "image/emerald/326.png"
+  },
+  {
+    "id": "pokedex-327",
+    "name": "パッチール",
+    "image": "image/emerald/327.png"
+  },
+  {
+    "id": "pokedex-328",
+    "name": "ナックラー",
+    "image": "image/emerald/328.png"
+  },
+  {
+    "id": "pokedex-329",
+    "name": "ビブラーバ",
+    "image": "image/emerald/329.png"
+  },
+  {
+    "id": "pokedex-330",
+    "name": "フライゴン",
+    "image": "image/emerald/330.png"
+  },
+  {
+    "id": "pokedex-331",
+    "name": "サボネア",
+    "image": "image/emerald/331.png"
+  },
+  {
+    "id": "pokedex-332",
+    "name": "ノクタス",
+    "image": "image/emerald/332.png"
+  },
+  {
+    "id": "pokedex-333",
+    "name": "チルット",
+    "image": "image/emerald/333.png"
+  },
+  {
+    "id": "pokedex-334",
+    "name": "チルタリス",
+    "image": "image/emerald/334.png"
+  },
+  {
+    "id": "pokedex-335",
+    "name": "ザングース",
+    "image": "image/emerald/335.png"
+  },
+  {
+    "id": "pokedex-336",
+    "name": "ハブネーク",
+    "image": "image/emerald/336.png"
+  },
+  {
+    "id": "pokedex-337",
+    "name": "ルナトーン",
+    "image": "image/emerald/337.png"
+  },
+  {
+    "id": "pokedex-338",
+    "name": "ソルロック",
+    "image": "image/emerald/338.png"
+  },
+  {
+    "id": "pokedex-339",
+    "name": "ドジョッチ",
+    "image": "image/emerald/339.png"
+  },
+  {
+    "id": "pokedex-340",
+    "name": "ナマズン",
+    "image": "image/emerald/340.png"
+  },
+  {
+    "id": "pokedex-341",
+    "name": "ヘイガニ",
+    "image": "image/emerald/341.png"
+  },
+  {
+    "id": "pokedex-342",
+    "name": "シザリガー",
+    "image": "image/emerald/342.png"
+  },
+  {
+    "id": "pokedex-343",
+    "name": "ヤジロン",
+    "image": "image/emerald/343.png"
+  },
+  {
+    "id": "pokedex-344",
+    "name": "ネンドール",
+    "image": "image/emerald/344.png"
+  },
+  {
+    "id": "pokedex-345",
+    "name": "リリーラ",
+    "image": "image/emerald/345.png"
+  },
+  {
+    "id": "pokedex-346",
+    "name": "ユレイドル",
+    "image": "image/emerald/346.png"
+  },
+  {
+    "id": "pokedex-347",
+    "name": "アノプス",
+    "image": "image/emerald/347.png"
+  },
+  {
+    "id": "pokedex-348",
+    "name": "アーマルド",
+    "image": "image/emerald/348.png"
+  },
+  {
+    "id": "pokedex-349",
+    "name": "ヒンバス",
+    "image": "image/emerald/349.png"
+  },
+  {
+    "id": "pokedex-350",
+    "name": "ミロカロス",
+    "image": "image/emerald/350.png"
+  },
+  {
+    "id": "pokedex-351",
+    "name": "ポワルン",
+    "image": "image/emerald/351.png"
+  },
+  {
+    "id": "pokedex-352",
+    "name": "カクレオン",
+    "image": "image/emerald/352.png"
+  },
+  {
+    "id": "pokedex-353",
+    "name": "カゲボウズ",
+    "image": "image/emerald/353.png"
+  },
+  {
+    "id": "pokedex-354",
+    "name": "ジュペッタ",
+    "image": "image/emerald/354.png"
+  },
+  {
+    "id": "pokedex-355",
+    "name": "ヨマワル",
+    "image": "image/emerald/355.png"
+  },
+  {
+    "id": "pokedex-356",
+    "name": "サマヨール",
+    "image": "image/emerald/356.png"
+  },
+  {
+    "id": "pokedex-357",
+    "name": "トロピウス",
+    "image": "image/emerald/357.png"
+  },
+  {
+    "id": "pokedex-358",
+    "name": "チリーン",
+    "image": "image/emerald/358.png"
+  },
+  {
+    "id": "pokedex-359",
+    "name": "アブソル",
+    "image": "image/emerald/359.png"
+  },
+  {
+    "id": "pokedex-360",
+    "name": "ソーナノ",
+    "image": "image/emerald/360.png"
+  },
+  {
+    "id": "pokedex-361",
+    "name": "ユキワラシ",
+    "image": "image/emerald/361.png"
+  },
+  {
+    "id": "pokedex-362",
+    "name": "オニゴーリ",
+    "image": "image/emerald/362.png"
+  },
+  {
+    "id": "pokedex-363",
+    "name": "タマザラシ",
+    "image": "image/emerald/363.png"
+  },
+  {
+    "id": "pokedex-364",
+    "name": "トドグラー",
+    "image": "image/emerald/364.png"
+  },
+  {
+    "id": "pokedex-365",
+    "name": "トドゼルガ",
+    "image": "image/emerald/365.png"
+  },
+  {
+    "id": "pokedex-366",
+    "name": "パールル",
+    "image": "image/emerald/366.png"
+  },
+  {
+    "id": "pokedex-367",
+    "name": "ハンテール",
+    "image": "image/emerald/367.png"
+  },
+  {
+    "id": "pokedex-368",
+    "name": "サクラビス",
+    "image": "image/emerald/368.png"
+  },
+  {
+    "id": "pokedex-369",
+    "name": "ジーランス",
+    "image": "image/emerald/369.png"
+  },
+  {
+    "id": "pokedex-370",
+    "name": "ラブカス",
+    "image": "image/emerald/370.png"
+  },
+  {
+    "id": "pokedex-371",
+    "name": "タツベイ",
+    "image": "image/emerald/371.png"
+  },
+  {
+    "id": "pokedex-372",
+    "name": "コモルー",
+    "image": "image/emerald/372.png"
+  },
+  {
+    "id": "pokedex-373",
+    "name": "ボーマンダ",
+    "image": "image/emerald/373.png"
+  },
+  {
+    "id": "pokedex-374",
+    "name": "ダンバル",
+    "image": "image/emerald/374.png"
+  },
+  {
+    "id": "pokedex-375",
+    "name": "メタング",
+    "image": "image/emerald/375.png"
+  },
+  {
+    "id": "pokedex-376",
+    "name": "メタグロス",
+    "image": "image/emerald/376.png"
+  },
+  {
+    "id": "pokedex-377",
+    "name": "レジロック",
+    "image": "image/emerald/377.png"
+  },
+  {
+    "id": "pokedex-378",
+    "name": "レジアイス",
+    "image": "image/emerald/378.png"
+  },
+  {
+    "id": "pokedex-379",
+    "name": "レジスチル",
+    "image": "image/emerald/379.png"
+  },
+  {
+    "id": "pokedex-380",
+    "name": "ラティアス",
+    "image": "image/emerald/380.png"
+  },
+  {
+    "id": "pokedex-381",
+    "name": "ラティオス",
+    "image": "image/emerald/381.png"
+  },
+  {
+    "id": "pokedex-382",
+    "name": "カイオーガ",
+    "image": "image/emerald/382.png"
+  },
+  {
+    "id": "pokedex-383",
+    "name": "グラードン",
+    "image": "image/emerald/383.png"
+  },
+  {
+    "id": "pokedex-384",
+    "name": "レックウザ",
+    "image": "image/emerald/384.png"
+  },
+  {
+    "id": "pokedex-385",
+    "name": "ジラーチ",
+    "image": "image/emerald/385.png"
+  },
+  {
+    "id": "pokedex-386",
+    "name": "デオキシス",
+    "image": "image/emerald/386.png"
+  }
 ]
