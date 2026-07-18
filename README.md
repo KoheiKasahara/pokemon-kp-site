@@ -1,6 +1,6 @@
 # ポケモンKP集計サイト
 
-Google Apps Script APIと接続する、GitHub Pages向けのReact + TypeScript静的サイト。
+Googleスプレッドシートの公開データをGitHub ActionsでJSON化して配信する、GitHub Pages向けのReact + TypeScript静的サイト。
 
 ## 開発
 
@@ -15,6 +15,12 @@ npm run dev
 npm run build
 ```
 
+スプレッドシートからJSONを生成する場合は、GASのWebアプリURLを指定する。
+
+```bash
+GAS_API_URL='https://script.google.com/macros/s/.../exec' npm run generate:data
+```
+
 `dist` をGitHub Pagesへ公開する。ルーティングにはHashRouterを使っているため、GitHub Pagesの直接アクセスでも404にならない。
 
 ## GitHub Pagesへの公開
@@ -25,9 +31,19 @@ npm run build
 - GitHub Actions画面からの手動実行
 - スプレッドシートの「サイト更新」ボタン
 
+Actionsでは、GASの公開APIから `public/data/tournaments.json` と `public/data/tournament-details.json` を生成してからビルドする。生成に失敗した場合はデプロイも失敗するため、不完全な公開内容にならない。
+
+### GitHub Actionsのシークレット
+
+リポジトリの **Settings → Secrets and variables → Actions** に次を設定する。
+
+| 名前 | 値 |
+| --- | --- |
+| `GAS_API_URL` | GAS Webアプリの `/exec` URL |
+
 ## スプレッドシートからサイトを更新する
 
-`docs/apps-script/publish-site.gs` を、対象スプレッドシートに紐づくApps Scriptプロジェクトへコピーする。
+共通ライブラリの作成と各スプレッドシートへの設定は [docs/apps-script/README.md](docs/apps-script/README.md) を参照する。
 
 ### 1. GitHubトークンを作成する
 
@@ -52,6 +68,14 @@ publishSite
 ```
 
 初回実行時はGoogleの権限確認が表示される。許可後、ボタンを押すと `repository_dispatch` によりGitHub Pagesのデプロイが開始される。
+
+## データファイル
+
+- `public/data/tournaments.json`: 公開中の大会一覧
+- `public/data/tournament-details.json`: 大会ごとのKP・参加者データ
+- `public/data/version.json`: JSONの生成日時・大会数
+
+ReactアプリはブラウザからGASへ直接アクセスせず、上記の静的JSONのみを読み込む。
 
 ## ポケモン画像
 

@@ -1,9 +1,18 @@
+import { useEffect, useState } from 'react';
 import { NavLink, Route, Routes } from 'react-router-dom';
+import { fetchDataVersion } from './lib/api';
+import { formatDateTime } from './lib/format';
 import { TournamentDetailPage } from './pages/TournamentDetailPage';
 import { TournamentListPage } from './pages/TournamentListPage';
 import { UserSearchPage } from './pages/UserSearchPage';
 
 export function App() {
+  const [updatedAt, setUpdatedAt] = useState<string | null>(null);
+
+  useEffect(() => {
+    fetchDataVersion().then((version) => setUpdatedAt(version.generated_at)).catch(() => setUpdatedAt(null));
+  }, []);
+
   return (
     <div className="app-shell">
       <header className="site-header">
@@ -28,6 +37,7 @@ export function App() {
 
       <footer className="site-footer">
         <p>ポケットモンスター エメラルド（第3世代）大会の非営利KP集計サイト</p>
+        {updatedAt && <p>データ更新: {formatDateTime(updatedAt)}</p>}
       </footer>
     </div>
   );
